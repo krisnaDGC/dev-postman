@@ -9,7 +9,7 @@ import { OutboundLink } from 'react-ga'
 import { Navigate, useNavigate } from 'react-router-dom'
 
 import styles from './Landing.module.scss'
-import Banner from './banner'
+// import Banner from './banner'
 
 import Navbar from './nav-bar'
 
@@ -118,7 +118,8 @@ const Landing = () => {
 
   return (
     <div className={styles.landing}>
-      <Banner innerRef={bannerRef} />
+      {/* Hide banner */}
+      {/* <Banner innerRef={bannerRef} /> */}
       <InfoBanner innerRef={infoBannerRef} />
       <div className={styles.topContainer}>
         <Navbar />
@@ -281,8 +282,8 @@ const Landing = () => {
           <div className={styles.textContainer}>
             <h2>Start using Postman today</h2>
             <p>
-              It is easy to get started with your gov.sg email account. For non
-              gov.sg email users, please contact us. We will review your request
+              It is easy to get started with your gov.kh email account. For non
+              gov.kh email users, please contact us. We will review your request
               within 3 business days.
             </p>
 
