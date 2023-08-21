@@ -44,11 +44,13 @@ const ConfirmModal = ({
     modalContext.setModalContent(<FeedbackModal url={feedbackUrl + email} />)
   }
 
+  const fixCondi = false
   async function onConfirmedClicked(): Promise<void> {
     try {
       await onConfirm()
       // Closes the modal
-      if (feedbackUrl) {
+      // hide feedback form: recovery just change to if(feedbackUrl)
+      if (fixCondi) {
         openFeedbackModal()
       } else {
         modalContext.close()
