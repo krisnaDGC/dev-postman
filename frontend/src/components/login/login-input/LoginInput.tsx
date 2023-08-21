@@ -126,7 +126,7 @@ const Login = () => {
       {sgidErrorMsg && <ErrorBlock>{sgidErrorMsg}</ErrorBlock>}
       <h3 className={styles.text}>
         {!otpSent ? (
-          <Trans>Sign in with your gov.sg email</Trans>
+          <Trans>Sign in with your gov.kh email</Trans>
         ) : (
           <Trans>One-Time Password</Trans>
         )}
@@ -149,7 +149,7 @@ const Login = () => {
         <TextInputWithButton
           value={email}
           type="email"
-          placeholder={t`e.g. postman@agency.gov.sg`}
+          placeholder={t`e.g. postman@agency.gov.kh`}
           onChange={setEmail}
           buttonDisabled={!email}
           onClick={sendOtp}
